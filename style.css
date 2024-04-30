@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000033;
+    margin: 0;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.team-stats {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    margin: 1.2rem 0;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add spacing between cards */
+    justify-items: center; /* Center items horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex; /* Display items in a row */
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Limit the width of each card */
+    height: 300px;
+    margin: 50px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: opacity 0.5s ease; /* Add transition for smooth effect */
+}
+
+.card:hover img {
+    opacity: 50%; /* Make the image disappear on hover */
+}
+
+.card h2 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr); /* Four players per row for larger screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr); /* Three players per row for even larger screens */
+    }
+}

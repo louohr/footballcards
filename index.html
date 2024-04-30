@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel='icon' href='./images/favicon.ico' type='image/x-icon'/>
+    <title>Football Player Cards</title>
+</head>
+<body>
+    <!-- Header information -->
+    <h1 style="color: white;" class="title">World Cup Sweden XI</h1>
+    <main>
+      <div class="team-stats">
+        <p style="color: white;">Team: <span id="team"></span></p>
+        <p style="color: white;">Sport: <span id="sport"></span></p>
+        <p style="color: white;">Year: <span id="year"></span></p>
+        <p style="color: white;">Head coach: <span id="head-coach"></span></p>
+      </div>
+
+    <!-- Add categories -->
+      <label class="options-label" for="players" style="color: white;">Filter Players:</label>
+      <select name="players" id="players">
+            <option value="all">All Players</option>
+            <option value="nickname">Nicknames</option>
+            <option value="forward">Position Forward</option>
+            <option value="midfielder">Position Midfielder</option>
+            <option value="defender">Position Defender</option>
+            <option value="goalkeeper">Position Goalkeeper</option>
+      </select>
+
+    <!-- Player Cards -->
+    <div class="cards-container">
+        <div class="card">
+            <img src="./images/panini marcus berg.png" alt="Player 1">
+            <h2>Marcus Berg</h2>
+            <p>Number: 9</p>
+            <p>Nickname: Mackan</p>
+            <p>Club: Al Ain</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini albin ekdal.png" alt="Player 2">
+            <h2>Albin Ekdal</h2>
+            <p>Number: 8</p>
+            <p>Nickname: N/A</p>
+            <p>Club: Hamburg</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini emil forsberg.png" alt="Player 3">
+            <h2>Emil Forsberg</h2>
+            <p>Number: 10</p>
+            <p>Nickname: Foppa</p>
+            <p>Club: RB Liepzig</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini sebastian larsson.png" alt="Player 4">
+            <h2>Sebastian Larsson</h2>
+            <p>Number: 7</p>
+            <p>Nickname: Seb</p>
+            <p>Club: AIK</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini mikael lustig.png" alt="Player 5">
+            <h2>Mikael Lustig</h2>
+            <p>Number: 2</p>
+            <p>Nickname: Micke</p>
+            <p>Club: Celtic FC</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini victor nilsson lindelöf.png" alt="Player 6">
+            <h2>Victor Nilsson Lindelöf</h2>
+            <p>Number: 3</p>
+            <p>Nickname: Vigge</p>
+            <p>Club: Manchester United</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini andreas granqvist.png" alt="Player 7">
+            <h2>Andreas Granqvist</h2>
+            <p>Number: 4</p>
+            <p>Nickname: Granen</p>
+            <p>Club: Helsingsborgs IF</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini ola toivonen.png" alt="Player 8">
+            <h2>Ola Toivonen</h2>
+            <p>Number: 20</p>
+            <p>Nickname: N/A</p>
+            <p>Club: Toulouse</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini ludwig augustinsson.png" alt="Player 9">
+            <h2>Ludwig Augustinsson</h2>
+            <p>Number: 6</p>
+            <p>Nickname: Ludde</p>
+            <p>Club: Werder Bremen</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini robin olsen.png" alt="Player 10">
+            <h2>Robin Olsen</h2>
+            <p>Number: 1</p>
+            <p>Nickname: N/A</p>
+            <p>Club: AS Roma</p>
+        </div>
+    
+        <div class="card">
+            <img src="./images/panini jimmy durmaz.png" alt="Player 11">
+            <h2>Jimmy Durmaz</h2>
+            <p>Number: 21</p>
+            <p>Nickname: N/A</p>
+            <p>Club: Toulouse</p>
+        </div>
+    </div>
+    
+    </main>
+    <footer>Created by Louise Öhrner</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
